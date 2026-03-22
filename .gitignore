@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# OS / system
+.DS_Store
+Thumbs.db
+
+# Power BI temp files
+*.pbix.lock
+
+# Data (ignore everything except samples)
+Data/daily_pulls/*
+Data/import_files/*
+Data/productlists/*
+
+# Keep sample files
+!Data/daily_pulls/sample_daily_pull.csv
+!Data/import_files/sample_import_file.xlsx
+!Data/productlists/All_urls.txt
+
+# Large files
+*.csv
+*.xlsx
+
+# Allow sample files again (override above)
+!Data/**/*.csv
+!Data/**/*.xlsx
+
+# IDE / editor
+.vscode/
+.idea/
