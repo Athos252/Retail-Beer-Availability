@@ -251,6 +251,7 @@ def get_user_choices(files):
     return choices
     
 def get_headers():
+    # Rendomized headers to avoid ingest distruptions
     # Load the JSON file containing header options
     with open('headers.json') as file:
         header_options = json.load(file)
@@ -269,7 +270,6 @@ def get_headers():
         'Accept-Language': random_accept_language,
         'Referer': random_referer,
         'Accept-Encoding': random_accept_encoding,
-        # Add more headers as needed
     }
 
     return headers
